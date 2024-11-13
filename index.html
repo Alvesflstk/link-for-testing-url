@@ -16,14 +16,24 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            gap: 20px;
+            gap: 25px;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+            overflow: hidden;
         }
 
         .image-container {
             animation: swing 2s infinite ease-in-out;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            max-height: 300px;
         }
 
         @keyframes swing {
@@ -46,11 +56,9 @@
     </style>
 </head>
 <body>
-  <h3>Tá muito desconfiado, deu certo rapaz ... 
-    ou será que não..
-  </h3>
+    <h3>Tá muito desconfiado, deu certo rapaz ... ou será que não..</h3>
     <div class="image-container">
-        <img src="./d12db8df6cebdd60494b56155d6706ce.jpg" alt="Imagem Balançando" >
+        <img src="./d12db8df6cebdd60494b56155d6706ce.jpg" alt="Imagem Balançando">
     </div>
 </body>
 </html>
