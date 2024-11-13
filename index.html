@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Balançando</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            animation: swing 2s infinite ease-in-out;
+        }
+
+        @keyframes swing {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(5deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(-5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+  <h3>Tá muito desconfiado, deu certo rapaz ... 
+    ou será que não..
+  </h3>
+    <div class="image-container">
+        <img src="./d12db8df6cebdd60494b56155d6706ce.jpg" alt="Imagem Balançando" >
+    </div>
+</body>
+</html>
